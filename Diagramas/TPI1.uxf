@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>184</y>
+      <w>80</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>usuarios
+-
+documento
+nombre
+apellido
+direccion
+correo_electronico
+telefono 
+contrasenia
+-
+SeguirPedido</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>464</x>
+      <y>168</y>
+      <w>112</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Pedidos
+-
+Fecha
+Hora_creacion
+Hora_entrega
+restaurante
+cantidad
+total_pagar					
+direccion_entrega
+metodo_de_pago
+-
++CorroborarZonaEntrega()
++CorroborarHorario()
++GenerarInforme()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>464</x>
+      <y>560</y>
+      <w>80</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Vehiculos
+-
+nombre
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>464</x>
+      <y>368</y>
+      <w>80</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Repartidores
+-
+Nombre
+Apellido
+Telefono
+Vehiculo
+-
++AsignarPedido()
++SeguirPedido()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>72</y>
+      <w>88</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Zona_reparto
+-
+nombre
+horario
+-
++AsignarZona()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>232</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Tipo_documento
+-
+Detalle</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>216</y>
+      <w>80</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>estado
+-
+detalle
+tiempo
+-
++SetEstado()
++GetEstado()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>264</y>
+      <w>64</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>256</y>
+      <w>56</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;50.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>504</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>568</x>
+      <y>224</y>
+      <w>96</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>100.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>120</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Productos
+-
+nombre
+precio
+descripcion
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>144</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>496</x>
+      <y>96</y>
+      <w>80</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Restaurante
+-
+nombre
+zona_reparto</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>144</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>104</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>328</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
